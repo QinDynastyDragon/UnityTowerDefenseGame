@@ -77,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   health: 200
-  value: 50
+  value: 10
   deathEffect: {fileID: 161916, guid: d9b027ec065d5bc46ae0d056ca26e202, type: 2}
 --- !u!135 &13526910
 SphereCollider:
@@ -114,6 +114,10 @@ Prefab:
       propertyPath: deathEffect
       value: 
       objectReference: {fileID: 161916, guid: d9b027ec065d5bc46ae0d056ca26e202, type: 2}
+    - target: {fileID: 0}
+      propertyPath: value
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 155038}

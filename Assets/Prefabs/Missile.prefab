@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  damage: 50
+  damage: 40
   explosionRadius: 2
   impactEffect: {fileID: 115136, guid: b9c4e6180343a8148b7bb16da4e2571b, type: 2}
 --- !u!1001 &100100000
@@ -123,7 +123,7 @@ Prefab:
       objectReference: {fileID: 115136, guid: b9c4e6180343a8148b7bb16da4e2571b, type: 2}
     - target: {fileID: 0}
       propertyPath: damage
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
