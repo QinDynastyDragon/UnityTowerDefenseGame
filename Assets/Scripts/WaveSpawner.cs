@@ -30,6 +30,8 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave() // ienumerator is available from System.Collection, allowed us to pause this piece of code for amount of seconds
     {
         waveIndex++;
+        PlayerStats.Rounds++;
+
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();

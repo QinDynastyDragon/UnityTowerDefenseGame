@@ -5,9 +5,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 455078}
+  - component: {fileID: 455078}
   m_Layer: 0
   m_Name: PartToRotate
   m_TagString: Untagged
@@ -20,10 +20,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 423968}
-  - 114: {fileID: 11424006}
+  - component: {fileID: 423968}
+  - component: {fileID: 11424006}
   m_Layer: 0
   m_Name: Missile Launcher
   m_TagString: Untagged
@@ -36,11 +36,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 495350}
-  - 33: {fileID: 3390942}
-  - 23: {fileID: 2369330}
+  - component: {fileID: 495350}
+  - component: {fileID: 3390942}
+  - component: {fileID: 2369330}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -53,11 +53,11 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 464762}
-  - 33: {fileID: 3372226}
-  - 23: {fileID: 2349608}
+  - component: {fileID: 464762}
+  - component: {fileID: 3372226}
+  - component: {fileID: 2349608}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -70,9 +70,9 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 426364}
+  - component: {fileID: 426364}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -94,6 +94,7 @@ Transform:
   - {fileID: 495350}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &426364
 Transform:
   m_ObjectHideFlags: 1
@@ -106,6 +107,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 455078}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &455078
 Transform:
   m_ObjectHideFlags: 1
@@ -120,6 +122,7 @@ Transform:
   - {fileID: 426364}
   m_Father: {fileID: 423968}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &464762
 Transform:
   m_ObjectHideFlags: 1
@@ -132,6 +135,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 455078}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &495350
 Transform:
   m_ObjectHideFlags: 1
@@ -144,6 +148,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 423968}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2349608
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -153,23 +158,29 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 056da7ac43dfe6f4f82d06209baebb6c, type: 2}
   - {fileID: 2100000, guid: 5d10c604b6ead0940ab6b6b63d877993, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &2369330
 MeshRenderer:
@@ -180,23 +191,29 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 056da7ac43dfe6f4f82d06209baebb6c, type: 2}
   - {fileID: 2100000, guid: 5d10c604b6ead0940ab6b6b63d877993, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3372226
 MeshFilter:
@@ -223,12 +240,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e930ddc842d5b4d84f338172896c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0.25
+  fireRate: 0.2
+  bulletPrefab: {fileID: 143460, guid: 73c545eb8d1f46c4ea2258e70711a364, type: 2}
   range: 30
+  useLaser: 0
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
   enemyTag: Enemy
   partToRotate: {fileID: 455078}
   turnSpeed: 10
-  bulletPrefab: {fileID: 143460, guid: 73c545eb8d1f46c4ea2258e70711a364, type: 2}
   firePoint: {fileID: 426364}
 --- !u!1001 &100100000
 Prefab:

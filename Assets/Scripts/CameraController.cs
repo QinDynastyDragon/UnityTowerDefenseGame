@@ -14,6 +14,12 @@ public class CameraController : MonoBehaviour
 	void Update () 
 	{
 
+        if (GameManager.GameIsOver)
+        {
+            this.enabled = false; // this is this scripting component, the cameracontroller
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
             doMovement = !doMovement;
 

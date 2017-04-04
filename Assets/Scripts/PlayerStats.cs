@@ -10,10 +10,14 @@ public class PlayerStats : MonoBehaviour
     public static int Lives;
     public int startLives = 20;
 
+    public static int Rounds; // dont set 0 here, or the rounds wont automatically reset
+
     void Start()
     {
         Money = startMoney;
         Lives = startLives;
+
+        Rounds = 0;
     }
 
 
