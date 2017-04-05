@@ -86,7 +86,7 @@ MonoBehaviour:
   startSpeed: 10
   speed: 10
   health: 200
-  worth: 5
+  worth: 11
   deathEffect: {fileID: 161916, guid: d9b027ec065d5bc46ae0d056ca26e202, type: 2}
 --- !u!135 &13526910
 SphereCollider:
