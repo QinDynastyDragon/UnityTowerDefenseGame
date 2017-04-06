@@ -7,13 +7,12 @@ public class Turret : MonoBehaviour
     private Enemy targetEnemy;
 
     [Header("General")]
-
-    public float fireRate = 1f;
+    public float range = 15f;       
 
     [Header("Use Bullets (default)")]
     public GameObject bulletPrefab;
     private float fireCountdown = 0f;
-    public float range = 15f;
+    public float fireRate = 1f;
 
     [Header("Use Laser")]
     public bool useLaser = false;

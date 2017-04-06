@@ -83,10 +83,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af13b852c0f433a489b23af048de750e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
+  startSpeed: 5
   speed: 10
-  health: 200
-  worth: 11
+  health: 170
+  worth: 12
   deathEffect: {fileID: 161916, guid: d9b027ec065d5bc46ae0d056ca26e202, type: 2}
 --- !u!135 &13526910
 SphereCollider:
@@ -139,6 +139,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 155038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022323b07547a7143bc0795b30deebf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e56c4903b321ee4a817b074c0e6aad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
