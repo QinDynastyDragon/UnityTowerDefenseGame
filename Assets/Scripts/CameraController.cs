@@ -5,7 +5,6 @@ public class CameraController : MonoBehaviour
 
     public float panSpeed = 30f;
     public float panBorderThickness = 10f;
-    private bool doMovement = true;
     public float scrollSpeed = 5f;
     public float minY = 10f;
     public float maxY = 80f;
@@ -19,12 +18,6 @@ public class CameraController : MonoBehaviour
             this.enabled = false; // this is this scripting component, the cameracontroller
             return;
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-            doMovement = !doMovement;
-
-        if (!doMovement)
-            return;
 
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)  // getkeydown/up is only one time, getkey is everything hold and pressed
             // the screen resolution starts from bottom left of the screen
