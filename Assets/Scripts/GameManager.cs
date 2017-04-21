@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static bool GameIsOver;   // can call this in other script by, GameManager.gameIsOver  ,CAREFUL static variable will carry on to the next scene, which means, next time it will be true
 
     public GameObject gameOverUI;
+    public GameObject completeLevelUI;
 
     void Start()
     {
@@ -35,6 +36,13 @@ public class GameManager : MonoBehaviour
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        GameIsOver = true;
+        completeLevelUI.SetActive(true);
+
     }
 
 
