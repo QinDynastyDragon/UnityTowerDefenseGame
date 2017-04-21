@@ -4,21 +4,43 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour 
 {
-    public Transform enemyPrefab;
-    public Transform spawnPoint;
-    public float timeBetweenWaves = 5f;
+    public static int EnemiesAlive = 0;
 
+    public Wave[] waves;
+
+    public Transform spawnPoint;
+
+    public float timeBetweenWaves = 5f;
     private float countdown = 2f;
-    private int waveIndex = 0;
 
     public Text waveCountdownText;
 
-	void Update () 
+    public GameManager gameManager;
+
+    private int waveIndex = 0;
+
+    
+    void Update () 
 	{
-	    if (countdown <= 0f)
+        if (EnemiesAlive > 0)
+        {
+            return;
+        }
+        if(PlayerStats.Lives > 0)
+        {
+            if (waveIndex == waves.Length)
+            {
+                gameManager.WinLevel();
+                this.enabled = false;
+                return;
+            }
+        }
+        
+        if (countdown <= 0f)
         {
             StartCoroutine(SpawnWave());    // since ienumerator, we cant just call SpawnWave();
             countdown = timeBetweenWaves;
+            return;
         }
         countdown -= Time.deltaTime;
 
@@ -29,18 +51,24 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave() // ienumerator is available from System.Collection, allowed us to pause this piece of code for amount of seconds
     {
-        waveIndex++;
         PlayerStats.Rounds++;
 
-        for (int i = 0; i < waveIndex; i++)
+        Wave wave = waves[waveIndex];
+
+        EnemiesAlive = wave.count;
+
+        for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            SpawnEnemy(wave.enemy);
+            yield return new WaitForSeconds(1f / wave.rate);
         }
+        waveIndex++;
+
+        
     }
 
-    void SpawnEnemy()
+    void SpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
     }
 }
