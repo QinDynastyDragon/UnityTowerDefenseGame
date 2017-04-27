@@ -6447,11 +6447,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 449.89264
+      value: 448.05212
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -64.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_SizeDelta.x
@@ -6459,7 +6459,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 129
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchorMin.x
@@ -7794,11 +7794,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 587.39264
+      value: 585.5521
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -64.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_SizeDelta.x
@@ -7806,7 +7806,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchorMin.x
@@ -12561,11 +12561,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 709.89264
+      value: 708.0521
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -64.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_SizeDelta.x
@@ -12573,7 +12573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22482028, guid: 53754678374536f43a78fd6d32893b89, type: 2}
       propertyPath: m_AnchorMin.x
@@ -12737,7 +12737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d235d8fb2a02647b763e4ff7e59983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundsText: {fileID: 2090547669}
   menuSceneName: MainMenu
   sceneFader: {fileID: 503200548}
 --- !u!95 &1645613035
@@ -17014,23 +17013,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 155038, guid: c63faa9ea1ff08f42aec37d2631a23ea, type: 2}
-    count: 1
-    rate: 2
-  - enemy: {fileID: 155038, guid: c63faa9ea1ff08f42aec37d2631a23ea, type: 2}
-    count: 2
-    rate: 2
-  - enemy: {fileID: 155038, guid: c63faa9ea1ff08f42aec37d2631a23ea, type: 2}
     count: 5
     rate: 2
+  - enemy: {fileID: 155038, guid: c63faa9ea1ff08f42aec37d2631a23ea, type: 2}
+    count: 9
+    rate: 2
+  - enemy: {fileID: 155038, guid: c63faa9ea1ff08f42aec37d2631a23ea, type: 2}
+    count: 13
+    rate: 1
   - enemy: {fileID: 155038, guid: d16d002becd11db47a6c32da8b36da15, type: 2}
-    count: 3
+    count: 7
     rate: 1
   - enemy: {fileID: 155038, guid: f4d2abffd15a32e4d88638c052602531, type: 2}
-    count: 15
-    rate: 2
+    count: 30
+    rate: 1
   spawnPoint: {fileID: 500886765}
   timeBetweenWaves: 3
   waveCountdownText: {fileID: 761523521}
+  gameManager: {fileID: 0}
 --- !u!4 &2124540923
 Transform:
   m_ObjectHideFlags: 0
@@ -17083,6 +17083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1645613032}
+  completeLevelUI: {fileID: 0}
 --- !u!114 &2124540927
 MonoBehaviour:
   m_ObjectHideFlags: 0
